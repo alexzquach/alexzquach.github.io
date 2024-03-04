@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6cf349b0.css",
-    "main.js": "/static/js/main.7b93c60a.js",
+    "main.css": "/static/css/main.c11451bb.css",
+    "main.js": "/static/js/main.33a28694.js",
     "static/js/453.7f4f9716.chunk.js": "/static/js/453.7f4f9716.chunk.js",
+    "static/media/waitingroom.mp3": "/static/media/waitingroom.6a62199e803e43178c95.mp3",
     "static/media/Confetti1536.svg": "/static/media/Confetti1536.ced4952b45eeff8a2b09.svg",
     "index.html": "/index.html",
-    "main.6cf349b0.css.map": "/static/css/main.6cf349b0.css.map",
-    "main.7b93c60a.js.map": "/static/js/main.7b93c60a.js.map",
+    "main.c11451bb.css.map": "/static/css/main.c11451bb.css.map",
+    "main.33a28694.js.map": "/static/js/main.33a28694.js.map",
     "453.7f4f9716.chunk.js.map": "/static/js/453.7f4f9716.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cf349b0.css",
-    "static/js/main.7b93c60a.js"
+    "static/css/main.c11451bb.css",
+    "static/js/main.33a28694.js"
   ]
 }
