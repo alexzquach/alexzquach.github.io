@@ -46,6 +46,12 @@
   }
 }
 
+.music {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
 .timerheader {
   font-size: calc(20px + 2vmin);
   line-height: 2;
@@ -91,4 +97,63 @@
 
 .timertext {
   font-size: 16px;
+}
+
+.direction {
+  display: block flex;
+  background-color: #acf;
+  
+}
+
+.clue{
+  position: relative;
+  border-top: dashed;
+  border-right: dashed;
+  border-left: dashed;
+  border-bottom: dashed;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.imagecontainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+}
+
+.imagecol-3 {
+  width: 33%;
+  display: inline-block;
+}
+
+.imagedisplay {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 999px;
+}
+
+.gamedisplay{
+  margin-left: 10px;
+  border: 10px solid #ddd;
+  object-fit: fill;
+  width: 212px;
+  height: 212px;
+}
+
+figure{
+  font-weight: bold;
+  font-style: italic;
+  color: grey;
+}
+
+figure:hover .gamedisplay {
+  opacity: 0.3;
 }
