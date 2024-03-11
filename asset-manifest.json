@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.c11451bb.css",
-    "main.js": "/static/js/main.33a28694.js",
-    "static/js/453.7f4f9716.chunk.js": "/static/js/453.7f4f9716.chunk.js",
+    "main.css": "/static/css/main.4b9aa348.css",
+    "main.js": "/static/js/main.acb83204.js",
+    "static/js/453.efecd9e1.chunk.js": "/static/js/453.efecd9e1.chunk.js",
     "static/media/waitingroom.mp3": "/static/media/waitingroom.6a62199e803e43178c95.mp3",
+    "static/media/toronto.png": "/static/media/toronto.cefffbd239f00abf4353.png",
     "static/media/Confetti1536.svg": "/static/media/Confetti1536.ced4952b45eeff8a2b09.svg",
+    "static/media/dior.png": "/static/media/dior.434a8ca252ade622ba85.png",
     "index.html": "/index.html",
-    "main.c11451bb.css.map": "/static/css/main.c11451bb.css.map",
-    "main.33a28694.js.map": "/static/js/main.33a28694.js.map",
-    "453.7f4f9716.chunk.js.map": "/static/js/453.7f4f9716.chunk.js.map"
+    "main.4b9aa348.css.map": "/static/css/main.4b9aa348.css.map",
+    "main.acb83204.js.map": "/static/js/main.acb83204.js.map",
+    "453.efecd9e1.chunk.js.map": "/static/js/453.efecd9e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c11451bb.css",
-    "static/js/main.33a28694.js"
+    "static/css/main.4b9aa348.css",
+    "static/js/main.acb83204.js"
   ]
 }
