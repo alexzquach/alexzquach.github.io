@@ -1,29 +1,27 @@
-import React, { Dispatch, SetStateAction, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './App.css';
 import { appContext } from './App';
-import { useLocation, useNavigate, Outlet, useOutletContext } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function MainScreen(this: any) {
 
-    // Declarations
-    let navigate = useNavigate()
+  // Declarations
+  let navigate = useNavigate()
 
-    const { totalWinnings, setTotalWinnings, isCrosswordCompleted, setCrosswordComplete } = useContext(appContext);
-    // End Declarations
+  const { totalWinnings, setTotalWinnings, isCrosswordCompleted, setCrosswordComplete, isPriceIsRightCompleted, setPriceIsRightComplete } = useContext(appContext);
+  // End Declarations
 
-    console.log(totalWinnings);
+  // Game Clicks
+  const crossWordClick = () => {
+    navigate('/Crossword');
+  } 
 
-    // Game Clicks
-    const crossWordClick = () => {
-      navigate('/Crossword');
-    } 
+  const priceIsRightClick = () => {
+    navigate('/Crossword');
+  } 
+  // End Game Clicks
 
-    const priceIsRightClick = () => {
-      navigate('/Crossword');
-    } 
-    // End Game Clicks
-
-    // Game completion trackers()
+    // Game completion trackers
     useEffect(() => {
       if (isCrosswordCompleted == true){
           // Disable the button
@@ -32,10 +30,20 @@ export default function MainScreen(this: any) {
       }
   }, [isCrosswordCompleted]);
 
+    useEffect(() => {
+      if (isPriceIsRightCompleted == true){
+          // Disable the button
+          (document.getElementById('priceButton') as HTMLInputElement)!.disabled = true;
+          console.log("Done Price is Right");
+      }
+  }, [isPriceIsRightCompleted]);
+  // End Game Completion trackers
+
   return (  
       <div className="MainBackground">
+        <label className="dollars">Current Prize Dollars: ${totalWinnings}</label>
         <div className='imagecontainer'>
-          <h1>Finish all 3 games to unlock your gift</h1>
+          <h1 className="middleheader">Finish all 3 games to unlock a gift</h1>
           <div className="imagedisplay">
             <div className="imagecol-3">
               <figure>

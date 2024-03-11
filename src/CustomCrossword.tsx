@@ -15,6 +15,12 @@ const testData = {
     },
 }
 
+// const test = {
+//     1: {poo: 2},
+//     2: {}
+// }
+//console.log(testData.across[1])
+
 const gameData = {
     across: {
       1: {clue: 'Sweetest Dog',answer: 'BUNNY', row: 0,col: 0,},
@@ -24,7 +30,7 @@ const gameData = {
       10: { clue: 'Key Ingredient in Meal Prep Chicken', answer: 'ADOBO', row: 6, col: 6 },
       11: { clue: 'Your Heart Is', answer: 'HOME', row: 3, col: 12 },
       12: { clue: 'Me', answer: 'LOVER', row: 6, col: 12 },
-      13: { clue: 'Sea Creature on Land', answer: 'PABLO', row: 3, col: 18 },
+      13: { clue: 'Sea Creature on Land', answer: 'WHALE', row: 3, col: 18 },
     },
     down: {
       2: { clue: 'Our First Vacation', answer: 'NIAGARA', row: 0, col: 2,},
@@ -55,6 +61,7 @@ export default function CustomCrossword() {
     // Callback for checking if the crossword is correct
     const onCrosswordCorrect = useCallback(
         (isCorrect: boolean) => {
+            console.log(isCorrect);
             if (isCorrect == true){
                 setDone(true);
             }
@@ -64,6 +71,7 @@ export default function CustomCrossword() {
     // hook that checks if the games done
     useEffect(() => {
         if (done == true){
+            (document.getElementById('backButton') as HTMLButtonElement).hidden = false;
             console.log("DONE GAME");
             setCrosswordComplete(true);
             setTotalWinnings(totalWinnings + 100);
@@ -82,9 +90,9 @@ export default function CustomCrossword() {
                     highlightBackground: '#f8c8dc'}}
                 
             >
-                <Crossword data={testData} onCrosswordCorrect={onCrosswordCorrect} />
+                <Crossword data={gameData} onCrosswordCorrect={onCrosswordCorrect} />
             </ThemeProvider>
-            <button onClick={() => backClick()}>back</button>
+            <button id="backButton" className="backbutton" onClick={() => backClick()} hidden>Back to Games</button>
         </div>
     ); 
 }

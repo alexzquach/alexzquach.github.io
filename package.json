@@ -1,7 +1,7 @@
 {
   "name": "birthday-surprise",
   "version": "0.1.0",
-  "homepage": "https://alexzquach.github.io/",
+  "homepage": "https://alexzquach.github.io/#",
   "private": true,
   "dependencies": {
     "@jaredreisinger/react-crossword": "^5.2.0",

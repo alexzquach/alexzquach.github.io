@@ -1,13 +1,9 @@
-import React, { Component, useContext } from 'react';
-import BackgroundConfetti from './Confetti1536.svg';
-import test from './logo192.png';
-import { BrowserRouter, Route, Link, Routes, Navigate, Outlet, useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 import waitingRoomMusic from './waitingroom.mp3'
 
 import { useEffect, useMemo, useState, useRef } from "react";
-import { appContext } from './App';
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -72,7 +68,6 @@ export const WaitingScreen = ({ deadline = birthday }) => {
                     ))}
                 </div>
             </div>
-            <Outlet />
         </div>  
     );  
 };
