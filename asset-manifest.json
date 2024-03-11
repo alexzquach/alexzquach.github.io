@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/alexzquach.github.io/static/css/main.652ac800.css",
-    "main.js": "/alexzquach.github.io/static/js/main.954e74d1.js",
-    "static/js/453.efecd9e1.chunk.js": "/alexzquach.github.io/static/js/453.efecd9e1.chunk.js",
-    "static/media/waitingroom.mp3": "/alexzquach.github.io/static/media/waitingroom.6a62199e803e43178c95.mp3",
-    "static/media/toronto.png": "/alexzquach.github.io/static/media/toronto.cefffbd239f00abf4353.png",
-    "static/media/Confetti1536.svg": "/alexzquach.github.io/static/media/Confetti1536.ced4952b45eeff8a2b09.svg",
-    "static/media/dior.png": "/alexzquach.github.io/static/media/dior.434a8ca252ade622ba85.png",
-    "index.html": "/alexzquach.github.io/index.html",
-    "main.652ac800.css.map": "/alexzquach.github.io/static/css/main.652ac800.css.map",
-    "main.954e74d1.js.map": "/alexzquach.github.io/static/js/main.954e74d1.js.map",
-    "453.efecd9e1.chunk.js.map": "/alexzquach.github.io/static/js/453.efecd9e1.chunk.js.map"
+    "main.css": "/static/css/main.4b9aa348.css",
+    "main.js": "/static/js/main.cada364d.js",
+    "static/js/453.efecd9e1.chunk.js": "/static/js/453.efecd9e1.chunk.js",
+    "static/media/waitingroom.mp3": "/static/media/waitingroom.6a62199e803e43178c95.mp3",
+    "static/media/toronto.png": "/static/media/toronto.cefffbd239f00abf4353.png",
+    "static/media/Confetti1536.svg": "/static/media/Confetti1536.ced4952b45eeff8a2b09.svg",
+    "static/media/dior.png": "/static/media/dior.434a8ca252ade622ba85.png",
+    "index.html": "/index.html",
+    "main.4b9aa348.css.map": "/static/css/main.4b9aa348.css.map",
+    "main.cada364d.js.map": "/static/js/main.cada364d.js.map",
+    "453.efecd9e1.chunk.js.map": "/static/js/453.efecd9e1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.652ac800.css",
-    "static/js/main.954e74d1.js"
+    "static/css/main.4b9aa348.css",
+    "static/js/main.cada364d.js"
   ]
 }
