@@ -7,6 +7,7 @@ import MainScreen from './MainScreen';
 import CustomCrossword from './CustomCrossword';
 import { WaitingScreen } from './WaitingScreen';
 import { Timer } from './test';
+import PriceIsRight from './PriceIsRight';
 
 // Global context for the amount of games completed
 export type GlobalContent = {
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<WaitingScreen />} />
             <Route path="/Games" element={<MainScreen />} />
             <Route path="/Crossword" element={<CustomCrossword />} />
+            <Route path="/PriceIsRight" element={<PriceIsRight />} />
           </Routes>
         </appContext.Provider>     
       </div>

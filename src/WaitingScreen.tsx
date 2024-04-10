@@ -50,7 +50,7 @@ export const WaitingScreen = ({ deadline = birthday }) => {
     return (
         <div className="MainBackground">
             <div className='timercontainer'>
-                <button className="music" onClick={playing ? pause : play}>Play</button>
+                <button className="music" onClick={playing ? pause : play}>Play Waiting Room Music</button>
                 <h1 className="timerheader">New Age Loading...</h1>
                 <div className="timer"> 
                     {Object.entries({

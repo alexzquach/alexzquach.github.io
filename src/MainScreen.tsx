@@ -17,7 +17,7 @@ export default function MainScreen(this: any) {
   } 
 
   const priceIsRightClick = () => {
-    navigate('/Crossword');
+    navigate('/PriceIsRight');
   } 
   // End Game Clicks
 
@@ -43,21 +43,15 @@ export default function MainScreen(this: any) {
       <div className="MainBackground">
         <label className="dollars">Current Prize Dollars: ${totalWinnings}</label>
         <div className='imagecontainer'>
-          <h1 className="middleheader">Finish all 3 games to unlock a gift</h1>
+          <h1 className="middleheader">Finish both games to unlock a gift</h1>
           <div className="imagedisplay">
-            <div className="imagecol-3">
+            <div className="imagecol-2">
               <figure>
                 <input type="image" id="crosswordButton" className="gamedisplay" src={require('./toronto.png')} onClick={() => crossWordClick()} title="Complete a puzzle about love" />
                 <figcaption>Crossword Puzzle</figcaption>
               </figure>
             </div>
-            <div className="imagecol-3">
-              <figure>
-                <img className="gamedisplay" src={require('./toronto.png')} />
-                <figcaption>Crossword Puzzle</figcaption>
-              </figure>
-            </div>
-            <div className="imagecol-3">
+            <div className="imagecol-2">
             <figure>
                 <input type="image" id="priceButton" className="gamedisplay" src={require('./dior.png')} onClick={() => priceIsRightClick()} title="Earn dollars for your birthday"/>
                 <figcaption>The Price is Right</figcaption>

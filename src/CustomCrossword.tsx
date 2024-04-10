@@ -74,7 +74,7 @@ export default function CustomCrossword() {
             (document.getElementById('backButton') as HTMLButtonElement).hidden = false;
             console.log("DONE GAME");
             setCrosswordComplete(true);
-            setTotalWinnings(totalWinnings + 100);
+            setTotalWinnings(totalWinnings + 300);
         }
     }, [done]);
 
