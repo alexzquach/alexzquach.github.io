@@ -8,6 +8,7 @@ import CustomCrossword from './CustomCrossword';
 import { WaitingScreen } from './WaitingScreen';
 import { Timer } from './test';
 import PriceIsRight from './PriceIsRight';
+import { FinalScreen } from './FinalScreen';
 
 // Global context for the amount of games completed
 export type GlobalContent = {
@@ -35,8 +36,8 @@ function App() {
 
   return (
     //Deployment router
-    // <HashRouter>
-    <BrowserRouter>
+    <HashRouter>
+    {/* <BrowserRouter> */}
       <div className="App">
         {/* Main screen, routes */}
         <appContext.Provider value={{totalWinnings: totalWinnings, setTotalWinnings: setTotalWinnings, isCrosswordCompleted: isCrosswordCompleted, setCrosswordComplete: setCrosswordComplete, isPriceIsRightCompleted: isPriceIsRightCompleted, setPriceIsRightComplete: setPriceIsRightComplete}}>
@@ -45,11 +46,12 @@ function App() {
             <Route path="/Games" element={<MainScreen />} />
             <Route path="/Crossword" element={<CustomCrossword />} />
             <Route path="/PriceIsRight" element={<PriceIsRight />} />
+            <Route path="/FinalScreen" element={<FinalScreen /> } />
           </Routes>
         </appContext.Provider>     
       </div>
-    </BrowserRouter>
-    // </HashRouter>
+    {/* </BrowserRouter> */}
+    </HashRouter>
   );
 }
 

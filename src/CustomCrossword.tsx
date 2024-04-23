@@ -90,7 +90,7 @@ export default function CustomCrossword() {
                     highlightBackground: '#f8c8dc'}}
                 
             >
-                <Crossword data={gameData} onCrosswordCorrect={onCrosswordCorrect} />
+                <Crossword data={testData} onCrosswordCorrect={onCrosswordCorrect} />
             </ThemeProvider>
             <button id="backButton" className="backbutton" onClick={() => backClick()} hidden>Back to Games</button>
         </div>

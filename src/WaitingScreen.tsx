@@ -10,7 +10,7 @@ const MINUTE = SECOND * 60;
 const HOUR = MINUTE * 60;
 const DAY = HOUR * 24;
 const birthday = "28 April 2024 00:00:00 GMT+8"
-const testTime = "10 March 2024 18:51:00 GMT-5"
+const testTime = "11 April 2024 11:00:00 GMT-4"
 
 export const WaitingScreen = ({ deadline = birthday }) => {
     const parsedDeadline = useMemo(() => Date.parse(deadline), [deadline]);

@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import testImage from './PriceIsRightImages/toronto.png'
-
-export default {
-  testImage
-}
-
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

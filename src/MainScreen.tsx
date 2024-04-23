@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import './App.css';
 import { appContext } from './App';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +7,9 @@ export default function MainScreen(this: any) {
 
   // Declarations
   let navigate = useNavigate()
+
+  const [imagePath, setImagePath] = useState('./toronto.png');
+  const [imagePath2, setImagePath2] = useState('./dior.png');
 
   const { totalWinnings, setTotalWinnings, isCrosswordCompleted, setCrosswordComplete, isPriceIsRightCompleted, setPriceIsRightComplete } = useContext(appContext);
   // End Declarations
@@ -26,18 +29,31 @@ export default function MainScreen(this: any) {
       if (isCrosswordCompleted == true){
           // Disable the button
           (document.getElementById('crosswordButton') as HTMLInputElement)!.disabled = true;
+          setImagePath('./done.png')
           console.log("Done Crossword");
       }
-  }, [isCrosswordCompleted]);
 
-    useEffect(() => {
       if (isPriceIsRightCompleted == true){
-          // Disable the button
-          (document.getElementById('priceButton') as HTMLInputElement)!.disabled = true;
-          console.log("Done Price is Right");
+        // Disable the button
+        (document.getElementById('priceButton') as HTMLInputElement)!.disabled = true;
+        setImagePath2('./done.png')
+        console.log("Done Price is Right");
       }
-  }, [isPriceIsRightCompleted]);
-  // End Game Completion trackers
+
+      if (isCrosswordCompleted == true && isPriceIsRightCompleted == true){
+        (document.getElementById('nextButton') as HTMLButtonElement).hidden = false;
+      }
+  }, [isCrosswordCompleted, isPriceIsRightCompleted]);
+
+  const NextClick = () => {
+    //setCount(count + 1);
+    navigate('/FinalScreen');
+} 
+
+  //   useEffect(() => {
+      
+  // }, [isPriceIsRightCompleted]);
+  // // End Game Completion trackers
 
   return (  
       <div className="MainBackground">
@@ -47,18 +63,20 @@ export default function MainScreen(this: any) {
           <div className="imagedisplay">
             <div className="imagecol-2">
               <figure>
-                <input type="image" id="crosswordButton" className="gamedisplay" src={require('./toronto.png')} onClick={() => crossWordClick()} title="Complete a puzzle about love" />
+                <input type="image" id="crosswordButton" className="gamedisplay" src={require(`${imagePath}`)} onClick={() => crossWordClick()} title="Complete a puzzle about love" />
                 <figcaption>Crossword Puzzle</figcaption>
               </figure>
             </div>
             <div className="imagecol-2">
             <figure>
-                <input type="image" id="priceButton" className="gamedisplay" src={require('./dior.png')} onClick={() => priceIsRightClick()} title="Earn dollars for your birthday"/>
+                <input type="image" id="priceButton" className="gamedisplay" src={require(`${imagePath2}`)} onClick={() => priceIsRightClick()} title="Earn dollars for your birthday"/>
                 <figcaption>The Price is Right</figcaption>
               </figure>
             </div>
           </div>
         </div>
+        {/* put hidden */}
+        <button id="nextButton" className="backbuttonTopRight" onClick={() => NextClick()} >Next</button>
       </div>
   );
 }
